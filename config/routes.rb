@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, path: "", path_name: {sign_in: 'login', sign_out: 'log_out', sign_up: 'register'} 
+
+
   resources :options
   resources :roles
   root to: "roles#index"
