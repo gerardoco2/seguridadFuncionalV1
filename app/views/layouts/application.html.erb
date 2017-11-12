@@ -11,11 +11,11 @@
   <body>
   
   <p class="alert"><%= alert %></p>
-  	<% if current_user?  %>
+  	<% if current_user  %>
 		<%= link_to 'logout', destroy_user_session_path, method: :delete %>
 	<% else %>
 		<%= link_to 'Register', new_user_registration_path %>
-		<%= link_to 'Login', new_user_session _path %>
+		<%= link_to 'Login', new_user_session_path %>
 	<% end %>
 
     <%= yield %>
