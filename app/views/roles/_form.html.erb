@@ -20,6 +20,8 @@
     <%= form.label :descripcion %>
     <%= form.text_field :descripcion, id: :role_descripcion %>
   </div>
+
+
   <div class="field">
   <%= hidden_field_tag "role[option_ids][]", nil %>
     <% Option.all.each do |option| %>

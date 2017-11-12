@@ -10,5 +10,13 @@
   <%= @role.descripcion %>
 </p>
 
+<ul>
+	<% @options_for_role.each do | opt | %>
+		<li><%= opt.nombre %></li>
+	<% end %>
+</ul>
+
+
+
 <%= link_to 'Edit', edit_role_path(@role) %> |
 <%= link_to 'Back', roles_path %>

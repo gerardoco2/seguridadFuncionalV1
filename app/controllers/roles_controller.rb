@@ -10,6 +10,7 @@ class RolesController < ApplicationController
   # GET /roles/1
   # GET /roles/1.json
   def show
+     @options_for_role =  @role.options
   end
 
   # GET /roles/new
